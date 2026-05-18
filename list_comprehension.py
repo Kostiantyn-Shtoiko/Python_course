@@ -38,15 +38,32 @@ from List import new_list
 #
 # print(second_letters)
 
-digits = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
-num = [ num for num in digits if num % 2 == 1]
-print(num)
+# digits = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+# num = [ num for num in digits if num % 2 == 1]
+# print(num)
+#
+#
+# digits = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+# num = []
+# for d in digits:
+#     if d % 2 == 1:
+#         num.append(d)
+#
+# print(num)
 
+# Dictionary Comprehension
+# number_dict = {'first':1,'second':2,'third':3}
+# new_dict = {key: value ** 3 for key, value in number_dict.items()}
+# print(new_dict)
+#
+# number_list = [6, 21, -12, 234, -1, 676, 1, 0, 22222, -7865]
+# number_dict = {number: number ** 2 for number in number_list}
+# print(number_dict)
+# number_dict = {number: 'positive' if number > 0 else 'negative' if number < 0 else 'zero' for number in number_list}
+# print(number_dict)
 
-digits = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
-num = []
-for d in digits:
-    if d % 2 == 1:
-        num.append(d)
-
-print(num)
+number_list = [6, 21, -12, 234, -1, 676, 1, 0, 22222, -7865]
+number_set = {number ** 2 for number in number_list}
+print(number_set)
+number_set = {number ** 2 for number in range(3,11)}
+print(number_set)
