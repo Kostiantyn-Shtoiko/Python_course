@@ -7,5 +7,6 @@ app = FastAPI()
 def root():
     return "Hello World"
 
+
 if __name__ == "__main__":
     uvicorn.run("Start_FastApi:app", reload=True)
