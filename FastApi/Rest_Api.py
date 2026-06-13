@@ -1,7 +1,7 @@
 from fastapi import FastAPI, HTTPException
 import uvicorn
 from pydantic import BaseModel
-from websockets.version import tag
+
 
 app = FastAPI()
 

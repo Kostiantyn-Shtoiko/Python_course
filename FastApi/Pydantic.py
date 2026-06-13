@@ -2,7 +2,6 @@ from pydantic import BaseModel, Field, EmailStr, ConfigDict
 from fastapi import FastAPI
 import uvicorn
 
-from CustomModules import __main__
 
 app = FastAPI()
 
@@ -36,3 +35,5 @@ class UserAgeSchema(UserSchema):
 
 if __name__ == "__main__":
     uvicorn.run("Pydantic:app", reload=True)
+
+
